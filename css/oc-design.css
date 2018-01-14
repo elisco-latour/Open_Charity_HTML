@@ -65,6 +65,9 @@ OpenCharity Min frameWork
 .oc-col--3 {
     width: calc( 25% - 32px );
 }
+.oc-col--9{
+    width: calc(75% - 32px);
+}
 
 /*===========================
 OpenCharity components
@@ -76,7 +79,6 @@ OpenCharity components
     margin: 0;
     background-color: #fff;
     padding: 32px 0;
-    border-bottom: 1px solid black;
 }
 
 .oc-logo{
@@ -84,5 +86,22 @@ OpenCharity components
 }
 
 .oc-logo img{
-    width: 35%;
+    width: 70%;
+}
+
+.oc-main__menu{
+    text-align: right;
+}
+
+.oc-menu__item{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #565659;
+    padding: 16px;
+}
+
+.oc-button {
+    padding: 16px 24px;
+    border: 2px solid #18c4d9;
+    color: #18c4d9;
 }
