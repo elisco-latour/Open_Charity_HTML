@@ -35,4 +35,11 @@ OpenCharity Min frameWork
     }
 }
 
+.oc-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 
