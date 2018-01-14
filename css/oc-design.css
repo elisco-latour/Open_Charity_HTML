@@ -71,3 +71,10 @@ OpenCharity components
 ===========================*/
 
 /* --------- Header ---------- */
+.oc-navigation {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    padding: 32px 0;
+    border-bottom: 1px solid black;
+}
