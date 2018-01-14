@@ -1,0 +1,38 @@
+/* 
+    Created on : 14 janv. 2018, 16:17:20
+    Author     : latour4
+    Description: Style of the OpenCharity website
+*/
+
+/*==========================
+ General styles
+===========================*/
+
+/*===========================
+OpenCharity Min frameWork
+===========================*/
+
+.oc-container {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and ( min-width: 425px ) {
+    .oc-container {
+        max-width: 403px;
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+    .oc-container {
+        max-width: 736px;
+    }
+}
+
+@media screen and ( min-width: 1024px) {
+    .oc-container {
+        max-width: 992px;
+    }
+}
+
+
