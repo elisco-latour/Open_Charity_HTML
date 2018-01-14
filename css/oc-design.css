@@ -7,6 +7,10 @@
 /*==========================
  General styles
 ===========================*/
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /*===========================
 OpenCharity Min frameWork
@@ -42,4 +46,23 @@ OpenCharity Min frameWork
     flex-wrap: wrap;
 }
 
+.oc-col--3, .oc-col--4, .oc-col--6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.oc-col--6{
+    width: calc(50% - 32px);
+}
+
+.oc-col--4 {
+    width: calc( 33.333333333% - 32px);
+}
+
+.oc-col--3 {
+    width: calc( 25% - 32px );
+}
 
