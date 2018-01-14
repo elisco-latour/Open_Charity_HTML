@@ -78,3 +78,11 @@ OpenCharity components
     padding: 32px 0;
     border-bottom: 1px solid black;
 }
+
+.oc-logo{
+    width: 100%;
+}
+
+.oc-logo img{
+    width: 35%;
+}
