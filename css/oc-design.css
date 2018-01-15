@@ -173,12 +173,32 @@ OpenCharity components
 }
 
 .oc-event__details{
-    width: 70%
+    width: 70%;
+    font-family: "Museo Sans";
 }
 
 .oc-event__registration{
     text-align: right;
     width: 30%;
+}
+
+.oc-event__registration a{
+   text-decoration: none;   
+}
+
+.oc-event__date{
+    color: #565659;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.oc-event__title{
+    font-size: .92em;
+    color: #64697f;
+}
+
+.oc-event__date span{
+    color: #18c4d9;
 }
 
 .oc-event__registration .oc-button{
