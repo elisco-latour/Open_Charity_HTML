@@ -19,13 +19,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 section {
-    padding: 64px 0;
+    padding: 16px 0 40px 0;
 }
 
 .oc-section__separator{
     height: 1px;
     width: 100%;
-    background-color: #4e5159;
+    border-top: 1px solid #e1e2e5;
 }
 /*===========================
 OpenCharity Min frameWork
@@ -262,6 +262,8 @@ OpenCharity components
 
 .oc-mission__cards{
     align-items: stretch;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e1e2e5;
 }
 
 .oc-mission__card{
@@ -322,7 +324,14 @@ OpenCharity components
     color: #64697f;
     font-size: .9em;
 }
+/* ---- Open Members section ------*/
+.oc-members{
+    background-color: #f1f2f5;
+   
+}
 
+
+/* ---- Open Charity footer section ------*/
 .oc-footer {
     background-color: #454850;
     padding-top: 32px;
