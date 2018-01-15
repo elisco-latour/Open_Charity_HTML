@@ -378,6 +378,13 @@ OpenCharity components
     transform: translate(-50%, -50%);
 }
 /* ---- Open Charity footer section ------*/
+
+.oc-social a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .oc-footer {
     background-color: #454850;
     padding-top: 32px;
