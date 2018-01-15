@@ -21,6 +21,12 @@ h1, h2, h3, h4, h5, h6{
 section {
     padding: 64px 0;
 }
+
+.oc-section__separator{
+    height: 1px;
+    width: 100%;
+    background-color: #4e5159;
+}
 /*===========================
 OpenCharity Min frameWork
 ===========================*/
@@ -315,4 +321,30 @@ OpenCharity components
 .oc-post__date{
     color: #64697f;
     font-size: .9em;
+}
+
+.oc-footer {
+    background-color: #454850;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    color: #9399b4;
+    text-align: center;
+}
+
+.oc-footer a{
+    color: #18c4d9;
+    text-decoration: none;
+}
+
+.oc-social{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #4e5159;
+}
+
+.oc-social span{
+    padding: 8px 16px;
+}
+
+.oc-copyright {
+    font-size: .8em;
 }
