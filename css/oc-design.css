@@ -48,6 +48,12 @@ OpenCharity Min frameWork
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .oc-container{
+        max-width: 1260px;
+    }
+}
+
 .oc-row {
     display: -ms-flexbox;
     display: flex;
@@ -187,7 +193,7 @@ OpenCharity components
     text-transform: uppercase;
     font-size: 1.8em;
     margin-top: 0;
-    
+
 }
 
 .oc-section__header h2, .oc-card__title h3{
@@ -286,4 +292,27 @@ OpenCharity components
 .oc-mission__card-text{
     color: #64697f;
     font-size: .875em;
+}
+
+/* ---- Open Charity Blog section ------*/
+.oc-post__title{
+    font-size: .95em;
+    color: #18c4d9;
+    font-weight: bold;
+        padding-bottom: 8px;
+}
+
+.oc-post__excerpt{
+    font-size: .9em;
+    color: #64697f;
+    padding-bottom: 32px;
+}
+
+.oc-post__title, .oc-post__excerpt{
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.oc-post__date{
+    color: #64697f;
+    font-size: .9em;
 }
