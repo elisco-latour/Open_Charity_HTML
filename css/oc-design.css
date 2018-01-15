@@ -68,7 +68,7 @@ OpenCharity Min frameWork
     flex-wrap: wrap;
 }
 
-.oc-col--3, .oc-col--4, .oc-col--6 {
+.oc-laptop__col--9, .oc-laptop__col--3, .oc-laptop__col--4, .oc-laptop__col--6 {
     position: relative;
     width: 100%;
     min-height: 1px;
@@ -76,18 +76,18 @@ OpenCharity Min frameWork
     padding-left: 16px;
 }
 
-.oc-col--6{
+.oc-laptop__col--6{
     width: calc(50% - 32px);
 }
 
-.oc-col--4 {
+.oc-laptop__col--4 {
     width: calc( 33.333333333% - 32px);
 }
 
-.oc-col--3 {
+.oc-laptop__col--3 {
     width: calc( 25% - 32px );
 }
-.oc-col--9{
+.oc-laptop__col--9{
     width: calc(75% - 32px);
 }
 
@@ -158,9 +158,7 @@ OpenCharity components
 /* Open Charity events module style*/
 .oc-event{
     background: #f1f2f5;
-    padding: 16px;
-    display: -ms-flex;
-    display: flex;
+    padding-top: 16px;
 }
 
 .oc-event p{
@@ -171,17 +169,18 @@ OpenCharity components
 }
 
 .oc-event__details{
-    width: 70%;
     font-family: "Museo Sans";
 }
 
 .oc-event__registration{
-    text-align: right;
-    width: 30%;
+    text-align: center;
+    display: table;
 }
 
 .oc-event__registration a{
    text-decoration: none;   
+   display: table-cell;
+   vertical-align: middle;
 }
 
 .oc-event__date{
@@ -410,4 +409,40 @@ OpenCharity components
 
 .oc-copyright {
     font-size: .8em;
+}
+
+/*==========================
+ BREAKPOINTS
+===========================*/
+@media screen and ( min-width: 0 ) and ( max-width: 425px) {
+    
+    .oc-mobile__col--12 {
+        width: calc( 100% - 32px );
+        margin-bottom: 40px;
+    }
+    
+    .oc-navigation{
+        display: none;
+    }
+    
+}
+
+@media screen and ( min-width: 426px ) and ( max-width: 768px ) {
+    .oc-tablet__col--6 {
+        width: calc( 50% - 32px );
+        margin-bottom: 40px;
+    }
+    
+    .oc-tablet__col--12 {
+        width: calc( 100% - 32px );
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and ( min-width: 769px ) and ( max-width: 1024px) {
+    
+}
+
+@media screen and ( min-width: 1025px ) and ( max-width: 1440px ) {
+    
 }
