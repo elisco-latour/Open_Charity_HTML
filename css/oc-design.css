@@ -283,7 +283,7 @@ OpenCharity components
 }
 
 .oc-mission .oc-container{
-    width: 103.067484663%;
+    width: 100%;
 }
 
 .oc-mission__cards{
@@ -421,8 +421,30 @@ OpenCharity components
         margin-bottom: 40px;
     }
     
-    .oc-navigation{
+    .oc-main__menu{
         display: none;
+    }
+    
+    .oc-mission__card{
+        margin-bottom: 128px;
+    }
+    
+    .oc-mission__card:first-child{
+        margin-top: 32px;
+    }
+    
+    .oc-mission__card:last-child{
+        margin-bottom: 0;
+    }
+    
+    .oc-hero{
+        padding: 32px 0;
+    }
+    .oc-logo__col{
+        margin-bottom: 0;
+    }
+    .oc-logo img{
+        width: 60%;
     }
     
 }
@@ -436,6 +458,10 @@ OpenCharity components
     .oc-tablet__col--12 {
         width: calc( 100% - 32px );
         margin-bottom: 40px;
+    }
+    
+    .oc-logo img{
+        width: 90%;
     }
 }
 
