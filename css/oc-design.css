@@ -7,11 +7,15 @@
 /*==========================
  General styles
 ===========================*/
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: "Open Sans";
     position: relative;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -416,7 +420,7 @@ OpenCharity components
     background-color: #fff;
     position: absolute;
     top: 32px;
-    right: 10%;
+    right: 5%;
     display: none;
 }
 
@@ -451,6 +455,7 @@ OpenCharity components
     .oc-drawer__trigger-container{
         display: block;
     }
+    
     .oc-drawer__trigger {
         display: block;
     }
@@ -458,6 +463,20 @@ OpenCharity components
     .oc-main__menu{
         display: none;
     }
+}
+
+.oc-drawer.visible-drawer{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    background: #fff;
+    top: 100px;
+    left: 0;
+    z-index: 5;
+}
+
+.oc-main_wrapper.visible-drawer{
+    transform: translateX(280px);
 }
 
 /*==========================
