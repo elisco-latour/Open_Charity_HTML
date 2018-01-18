@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Open Sans";
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -39,13 +40,7 @@ OpenCharity Min frameWork
 
 @media screen and ( min-width: 425px ) {
     .oc-container {
-        max-width: 403px;
-    }
-}
-
-@media screen and ( min-width: 768px ) {
-    .oc-container {
-        max-width: 736px;
+        max-width: 90%;
     }
 }
 
@@ -377,6 +372,7 @@ OpenCharity components
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* ---- Open Charity footer section ------*/
 
 .oc-social a{
@@ -409,6 +405,59 @@ OpenCharity components
 
 .oc-copyright {
     font-size: .8em;
+}
+
+/* ---- Drawer and is trigger section ------*/
+.oc-drawer__trigger-container{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #18c4d9;
+    padding: 6px 8px;
+    background-color: #fff;
+    position: absolute;
+    top: 32px;
+    right: 10%;
+    display: none;
+}
+
+.oc-drawer__trigger {
+    width: 24px;
+    height: 2px;
+    background-color: #18c4d9;
+    position: absolute;
+    top: 50%;
+    display: none;
+}
+
+.oc-drawer__trigger::before,
+.oc-drawer__trigger::after{
+    content: " ";
+    height: 2px;
+    width: 24px;
+    background-color: #18c4d9;
+    position: absolute;
+    display: block;
+}
+
+.oc-drawer__trigger::before{
+    bottom: 6px;
+}
+
+.oc-drawer__trigger::after{
+    top: 6px;
+}
+
+@media screen and (max-width: 682px) {
+    .oc-drawer__trigger-container{
+        display: block;
+    }
+    .oc-drawer__trigger {
+        display: block;
+    }
+    
+    .oc-main__menu{
+        display: none;
+    }
 }
 
 /*==========================
