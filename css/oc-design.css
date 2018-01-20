@@ -95,6 +95,15 @@ OpenCharity components
 ===========================*/
 
 /* --------- Header ---------- */
+.oc-header{
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    top:0;
+    left: 0;
+    box-shadow: 0px 0px 2px #64697f;
+}
+
 .oc-navigation {
     width: 100%;
     margin: 0;
@@ -203,6 +212,24 @@ OpenCharity components
     text-transform: uppercase;
     font-size: .875em;
     color: #fff;
+}
+/* ========== OC MAIN =============*/
+
+.oc-main_wrapper{
+    position: relative;
+}
+
+.oc-content{
+    position: relative;
+    will-change: transform;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+.oc-content.visible-drawer{
+    transform: translateX(280px);
 }
 
 /* ---- Get involved section ------*/
@@ -463,20 +490,50 @@ OpenCharity components
     .oc-main__menu{
         display: none;
     }
+    
+    .oc-hero{
+        margin-top: 40px;
+    }
+}
+
+.oc-drawer{
+    position: absolute;
+    height: 100%;
+    width: 280px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transform: translateX(-280px);
+    will-change: transform;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
 }
 
 .oc-drawer.visible-drawer{
-    position: fixed;
-    height: 100vh;
-    width: 280px;
-    background: #fff;
-    top: 100px;
-    left: 0;
-    z-index: 5;
+    transform: translateX(0px);
 }
 
-.oc-main_wrapper.visible-drawer{
-    transform: translateX(280px);
+
+.oc-main__overlay{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    opacity: 0;
+}
+
+.oc-main__overlay.is-active {
+    opacity: 1;
+    background-color: rgba(0,0,0,.5);
 }
 
 /*==========================
